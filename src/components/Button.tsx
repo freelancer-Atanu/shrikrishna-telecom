@@ -5,12 +5,12 @@ import type { IconName } from "@/lib/icons";
 export type ButtonVariant = "amber" | "outline" | "whatsapp" | "line" | "white" | "steel";
 
 const VARIANT_CLASSES: Record<ButtonVariant, string> = {
-  amber: "bg-amber text-charcoal-deep hover:bg-[#cc7f08]",
-  outline: "border-charcoal text-charcoal hover:bg-charcoal hover:text-cream",
+  amber: "bg-amber text-navy-deep hover:bg-[#ce6b0a]",
+  outline: "border-navy text-navy hover:bg-navy hover:text-cream",
   whatsapp: "bg-[#25D366] text-[#06280F] hover:bg-[#1fb958]",
   line: "border-cream/50 text-cream hover:bg-white/10",
-  white: "bg-white text-charcoal hover:bg-[#eee7d6]",
-  steel: "bg-steel text-white hover:bg-[#254c63]",
+  white: "bg-white text-navy hover:bg-[#eee7d6]",
+  steel: "bg-steel text-white hover:bg-[#115075]",
 };
 
 interface ButtonProps {

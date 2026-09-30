@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import Icon from "@/components/Icon";
 import type { SiteContent } from "@/types/content";
 
 export default function BrandStrip({ content }: { content: SiteContent }) {
@@ -18,13 +19,19 @@ export default function BrandStrip({ content }: { content: SiteContent }) {
               {group.brands.map((brand) => (
                 <li
                   key={brand.name}
-                  className="flex h-9 items-center gap-2 border border-line px-4 font-heading text-[14.5px] font-semibold normal-case tracking-normal text-charcoal transition-colors hover:border-steel hover:text-steel"
+                  className={`flex h-9 items-center gap-2 border px-4 font-heading text-[14.5px] font-semibold normal-case tracking-normal transition-colors ${
+                    brand.featured
+                      ? "border-2 border-amber bg-amber/10 text-navy"
+                      : "border-line text-navy hover:border-steel hover:text-steel"
+                  }`}
                 >
+                  {brand.featured && <Icon name="star" className="text-xs text-amber" />}
                   {brand.logoSlug && (
                     // eslint-disable-next-line @next/next/no-img-element -- small decorative brand glyph, next/image adds no benefit
                     <img src={`https://cdn.simpleicons.org/${brand.logoSlug}`} alt="" width={16} height={16} className="h-4 w-auto max-w-16 object-contain" />
                   )}
                   {brand.name}
+                  {brand.featured && <span className="sr-only"> — {brandStrip.featuredNote}</span>}
                 </li>
               ))}
             </ul>

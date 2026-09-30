@@ -12,6 +12,7 @@ import {
   faDiamondTurnRight,
   faStar,
   faBars,
+  faTag,
 } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
@@ -28,6 +29,7 @@ export const icons = {
   directions: faDiamondTurnRight,
   star: faStar,
   bars: faBars,
+  tag: faTag,
   whatsapp: faWhatsapp,
   google: faGoogle,
 } satisfies Record<string, IconDefinition>;

@@ -27,10 +27,10 @@ export default function MobileNav({ links, menuLabel }: { links: NavLink[]; menu
         onClick={() => setOpen((value) => !value)}
         className="flex flex-col gap-[5px] p-1.5"
       >
-        <Icon name="bars" className="text-lg text-charcoal" />
+        <Icon name="bars" className="text-lg text-navy" />
       </button>
       {open && (
-        <nav id={panelId} aria-label="Primary" className="absolute inset-x-0 top-full flex flex-col border-b-2 border-charcoal bg-cream px-6 pb-4.5">
+        <nav id={panelId} aria-label="Primary" className="absolute inset-x-0 top-full flex flex-col border-b-2 border-navy bg-cream px-6 pb-4.5">
           {links.map((link) => (
             <a
               key={link.href}

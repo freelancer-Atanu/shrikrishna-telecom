@@ -6,7 +6,7 @@ export default function TopBar({ content }: { content: SiteContent }) {
   const { business, topbar } = content;
 
   return (
-    <div className="bg-charcoal-deep text-[13px] text-[#B9C2BC]">
+    <div className="bg-navy-deep text-[13px] text-[#B7C2CE]">
       <div className="mx-auto flex max-w-[1140px] flex-wrap items-center justify-between gap-1.5 px-6 py-2">
         <a
           href={business.mapsUrl}

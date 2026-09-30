@@ -6,11 +6,11 @@ export default function Owner({ content }: { content: SiteContent }) {
   const { business, owner } = content;
 
   return (
-    <section id="owner" aria-label="About the proprietor" className="bg-charcoal py-15 text-cream">
+    <section id="owner" aria-label="About the proprietor" className="bg-navy py-15 text-cream">
       <Container className="grid grid-cols-1 items-center gap-11 md:grid-cols-[260px_1fr]">
         <div className="max-w-[220px] overflow-hidden rounded border-4 border-cream/15 md:max-w-none">
           <Image
-            src="https://i.pinimg.com/474x/c7/9a/37/c79a37e13ef14be556b51143bcbb1b01.jpg"
+            src="/images/taraknath-majumdar.webp"
             alt={owner.photoAlt}
             width={260}
             height={320}

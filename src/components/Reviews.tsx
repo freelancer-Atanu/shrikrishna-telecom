@@ -26,7 +26,7 @@ export default function Reviews({ content }: { content: SiteContent }) {
           {reviews.items.map((review) => (
             <li key={review.authorName} className="rounded border border-line bg-white p-5.5 transition-all hover:-translate-y-1 hover:shadow-lg">
               <Stars rating={review.rating} />
-              <p className="mb-4 text-sm text-[#3E453F]">&ldquo;{review.quote}&rdquo;</p>
+              <p className="mb-4 text-sm text-[#3E4652]">&ldquo;{review.quote}&rdquo;</p>
               <div className="flex items-center gap-2.5">
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-cream font-heading text-[13px] font-bold text-steel" aria-hidden="true">
                   {review.authorName.charAt(0)}

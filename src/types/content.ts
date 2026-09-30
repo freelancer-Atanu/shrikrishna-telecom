@@ -13,6 +13,8 @@ export interface PriceItem {
 export interface Brand {
   name: string;
   logoSlug?: string;
+  /** Brand promoted with an accent treatment (priority brands for the shop). */
+  featured?: boolean;
 }
 
 export interface BrandGroup {
@@ -32,6 +34,24 @@ export interface ProductItem {
   alt: string;
   title: string;
   meta: string;
+}
+
+export interface DealItem {
+  title: string;
+  /** Starting price, e.g. "₹80". */
+  price: string;
+  description: string;
+}
+
+export interface NewArrivalItem {
+  image: string;
+  alt: string;
+  brand: string;
+  model: string;
+  /** Short spec callouts, e.g. battery, camera sensor, processor. */
+  highlights: string[];
+  price: string;
+  badge: string;
 }
 
 export interface ReviewItem {
@@ -82,6 +102,7 @@ export interface SiteContent {
   brandStrip: {
     label: string;
     sub: string;
+    featuredNote: string;
     groups: BrandGroup[];
   };
   services: {
@@ -94,6 +115,20 @@ export interface SiteContent {
     label: string;
     heading: string;
     body: string;
+    deals: {
+      heading: string;
+      body: string;
+      pricePrefix: string;
+      ctaLabel: string;
+      items: DealItem[];
+    };
+    newArrivals: {
+      heading: string;
+      body: string;
+      ctaLabel: string;
+      items: NewArrivalItem[];
+    };
+    popularHeading: string;
     items: ProductItem[];
   };
   owner: {

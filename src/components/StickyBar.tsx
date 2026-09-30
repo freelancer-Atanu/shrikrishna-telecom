@@ -8,7 +8,7 @@ export default function StickyBar({ content }: { content: SiteContent }) {
   return (
     <nav
       aria-label="Quick actions"
-      className="fixed inset-x-0 bottom-0 z-40 flex justify-around border-t border-cream/15 bg-charcoal px-3.5 py-2.5 sm:hidden"
+      className="fixed inset-x-0 bottom-0 z-40 flex justify-around border-t border-cream/15 bg-navy px-3.5 py-2.5 sm:hidden"
     >
       <a href={telHref(business)} className="flex flex-col items-center gap-1 text-cream transition-transform hover:-translate-y-0.5">
         <Icon name="phone" className="text-xl text-amber" />

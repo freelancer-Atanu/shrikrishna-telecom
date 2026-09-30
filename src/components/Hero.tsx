@@ -8,7 +8,7 @@ export default function Hero({ content }: { content: SiteContent }) {
   const { business, hero } = content;
 
   return (
-    <section id="top" className="relative overflow-hidden bg-charcoal text-cream">
+    <section id="top" className="relative overflow-hidden bg-navy text-cream">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-5 [background-image:linear-gradient(#F7F3EA_1px,transparent_1px),linear-gradient(90deg,#F7F3EA_1px,transparent_1px)] [background-size:44px_44px]"
@@ -24,7 +24,7 @@ export default function Hero({ content }: { content: SiteContent }) {
             <br />
             <span className="text-amber">{hero.headingAccent}</span>
           </h1>
-          <p className="animate-rise mt-4.5 max-w-[48ch] text-base text-[#C7CDC8] normal-case tracking-normal [animation-delay:160ms]">
+          <p className="animate-rise mt-4.5 max-w-[48ch] text-base text-[#C9D3DE] normal-case tracking-normal [animation-delay:160ms]">
             {hero.body}
           </p>
           <div className="animate-rise mt-7 flex flex-wrap gap-3 [animation-delay:240ms]">
@@ -42,7 +42,7 @@ export default function Hero({ content }: { content: SiteContent }) {
             {hero.priceStrip.map((item) => (
               <div key={item.label} className="flex-1 basis-1/2 border-r border-b border-cream/20 px-4 py-3.5 last:border-r-0 sm:basis-auto sm:border-b-0">
                 <dd className="font-heading text-lg text-amber">{item.value}</dd>
-                <dt className="text-[11.5px] text-[#9BA69F]">{item.label}</dt>
+                <dt className="text-[11.5px] text-[#9CA8B8]">{item.label}</dt>
               </div>
             ))}
           </dl>
@@ -56,7 +56,7 @@ export default function Hero({ content }: { content: SiteContent }) {
             priority
             className="h-64 w-full object-cover md:h-80"
           />
-          <p className="absolute bottom-3 left-3 bg-amber px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-charcoal-deep">
+          <p className="absolute bottom-3 left-3 bg-amber px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-navy-deep">
             {hero.photoTag}
           </p>
         </div>

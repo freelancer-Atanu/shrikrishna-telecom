@@ -13,7 +13,7 @@ export default function Services({ content }: { content: SiteContent }) {
         <ul className="grid grid-cols-1 gap-px border border-line bg-line sm:grid-cols-2 md:grid-cols-3">
           {services.items.map((item) => (
             <li key={item.title} className="bg-cream p-6.5 transition-colors hover:bg-white">
-              <span className="mb-4 flex h-10 w-10 items-center justify-center bg-charcoal text-[17px] text-amber">
+              <span className="mb-4 flex h-10 w-10 items-center justify-center bg-navy text-[17px] text-amber">
                 <Icon name={item.icon} />
               </span>
               <h3 className="mb-2 text-base normal-case tracking-normal">{item.title}</h3>

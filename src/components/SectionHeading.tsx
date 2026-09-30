@@ -7,7 +7,7 @@ interface SectionHeadingProps {
 
 export default function SectionHeading({ label, heading, body, headingId }: SectionHeadingProps) {
   return (
-    <div className="mb-8 max-w-[620px]">
+    <div className="mb-8 max-w-155">
       <span className="mb-2 block text-[13px] font-bold uppercase tracking-wide text-amber">{label}</span>
       <h2 id={headingId} className="text-[28px]">
         {heading}
