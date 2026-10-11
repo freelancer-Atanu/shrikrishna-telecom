@@ -22,7 +22,7 @@ const content = getSiteContent();
 
 const title = `${content.business.name} — Onda, Bankura`;
 const description =
-  "Trusted mobile shop in Onda, Bankura since 2010 — all brands, with the full realme & Vivo range in stock. Screen glass from ₹80, back covers from ₹100, flip covers from ₹120, home electronics, any-brand laptops on order, plus repair, recharge, passport photo and Xerox — open Mon–Fri 9 AM to 9 PM, Sat–Sun 9 AM to 1:30 PM and 5 PM to 9 PM.";
+  "Trusted mobile shop in Onda, Bankura since 2010 — all brands, with the full realme & Vivo range in stock. Screen glass from ₹80, back covers from ₹100, flip covers from ₹100, home electronics, any-brand laptops on order, plus repair, recharge, passport photo and Xerox — open Mon–Fri 9 AM to 9 PM, Sat–Sun 9 AM to 1:30 PM and 5 PM to 9 PM.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

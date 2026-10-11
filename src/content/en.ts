@@ -49,7 +49,7 @@ export const en: SiteContent = {
     priceStrip: [
       { value: "₹80+", label: "Mobile screen glass" },
       { value: "₹100+", label: "Back covers + stickers" },
-      { value: "₹120+", label: "Flip covers" },
+      { value: "₹100+", label: "Flip covers" },
     ],
     photoAlt: "Phone repair workbench",
     photoTag: "Serving Onda since 2010",
@@ -170,7 +170,7 @@ export const en: SiteContent = {
         },
         {
           title: "Flip covers",
-          price: "₹120",
+          price: "₹100",
           description: "Flip covers that guard both the screen and the body.",
         },
       ],
