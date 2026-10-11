@@ -50,7 +50,6 @@ export interface NewArrivalItem {
   model: string;
   /** Short spec callouts, e.g. battery, camera sensor, processor. */
   highlights: string[];
-  price: string;
   badge: string;
 }
 
@@ -74,8 +73,9 @@ export interface SiteContent {
     whatsappNumber: string;
     whatsappDefaultMessage: string;
     addressLine: string;
+    landmark: string;
     addressRegion: string;
-    hoursLabel: string;
+    hoursSchedule: { days: string; times: string[] }[];
     mapsUrl: string;
   };
   topbar: {
@@ -160,6 +160,7 @@ export interface SiteContent {
     };
   };
   footer: {
+    hoursHeading: string;
     copyright: string;
     disclaimer: string;
   };

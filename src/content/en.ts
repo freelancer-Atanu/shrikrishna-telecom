@@ -15,12 +15,16 @@ export const en: SiteContent = {
     whatsappNumber: "919641200242",
     whatsappDefaultMessage: "Hi, I need help with",
     addressLine: "Onda Bazar, Bankura",
+    landmark: "Near Onda High School",
     addressRegion: "WB",
-    hoursLabel: "9:30 AM – 8:30 PM, all days",
+    hoursSchedule: [
+      { days: "Monday – Friday", times: ["9 AM – 9 PM"] },
+      { days: "Saturday & Sunday", times: ["9 AM – 1:30 PM", "5 PM – 9 PM"] },
+    ],
     mapsUrl: "https://maps.app.goo.gl/CZbNvzfnubdSRpjZ8",
   },
   topbar: {
-    hoursAndLocation: "Onda Bazar, Bankura — Open all days, 9:30 AM–8:30 PM",
+    hoursAndLocation: "Onda Bazar, Bankura (Near Onda High School) — Mon–Fri 9 AM–9 PM, Sat–Sun 9 AM–1:30 PM & 5–9 PM",
   },
   nav: [
     { label: "Services", href: "#services" },
@@ -173,7 +177,7 @@ export const en: SiteContent = {
     },
     newArrivals: {
       heading: "New arrivals on our shelves",
-      body: "Sealed-box stock that's in the shop right now. Prices shown are launch prices — ask us for today's best offer and to confirm colour and storage.",
+      body: "Sealed-box stock that's in the shop right now. Ask us for today's best price and to confirm colour and storage.",
       ctaLabel: "Check availability",
       items: [
         {
@@ -186,7 +190,6 @@ export const en: SiteContent = {
             "50MP AI dual rear camera · 8MP selfie",
             "Unisoc T8200 · 120Hz display · Android 16",
           ],
-          price: "Starting ₹8,999",
           badge: "Hot Pick",
         },
         {
@@ -199,7 +202,6 @@ export const en: SiteContent = {
             "50MP Sony IMX852 + 50MP selfie, rear selfie mirror",
             "Dimensity 6400 Turbo · 120Hz AMOLED · IP69K",
           ],
-          price: "Starting ₹31,999",
           badge: "New Launch",
         },
         {
@@ -212,7 +214,6 @@ export const en: SiteContent = {
             "50MP Sony IMX852 AI camera",
             "Dimensity 6300 · 144Hz display · IP69 water resistance",
           ],
-          price: "Starting ₹22,599",
           badge: "Just In",
         },
         {
@@ -225,7 +226,6 @@ export const en: SiteContent = {
             "50MP AI camera · 8MP selfie",
             "Dimensity 6300 · 144Hz display · military-grade build",
           ],
-          price: "Starting ₹23,999",
           badge: "Just In",
         },
         {
@@ -238,7 +238,6 @@ export const en: SiteContent = {
             "50MP AI rear camera",
             "6.8-inch 120Hz display · IP64 · military-grade build",
           ],
-          price: "Starting ₹14,499",
           badge: "New Launch",
         },
         {
@@ -251,7 +250,6 @@ export const en: SiteContent = {
             "50MP camera with 4K video",
             "Dimensity 7360 Turbo · IP68 + IP69",
           ],
-          price: "Starting ₹24,999",
           badge: "New Launch",
         },
         {
@@ -264,7 +262,6 @@ export const en: SiteContent = {
             "50MP AI dual rear camera",
             "Dimensity 6300 · 120Hz display",
           ],
-          price: "Starting ₹18,999",
           badge: "Just In",
         },
         {
@@ -277,7 +274,6 @@ export const en: SiteContent = {
             "Dimensity 6300 · 120Hz display",
             "Military-grade drop resistance · Android 16",
           ],
-          price: "Starting ₹14,999",
           badge: "Just In",
         },
         {
@@ -290,7 +286,6 @@ export const en: SiteContent = {
             "Snapdragon 4 Gen 5 processor",
             "50MP AI camera · 6.9-inch 120Hz · Gorilla Glass 7i",
           ],
-          price: "Starting ₹23,999",
           badge: "Just In",
         },
       ],
@@ -374,6 +369,7 @@ export const en: SiteContent = {
     },
   },
   footer: {
+    hoursHeading: "Opening hours",
     copyright: "© 2026 Sri Krishna Telecom & Online, Onda, Bankura.",
     disclaimer: "Placeholder content — prices, reviews and photos to be replaced before launch.",
   },

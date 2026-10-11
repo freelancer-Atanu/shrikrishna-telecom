@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Button from "@/components/Button";
 import Container from "@/components/Container";
+import HeroVideo from "@/components/HeroVideo";
 import { telHref, whatsappHref } from "@/lib/links";
 import type { SiteContent } from "@/types/content";
 
@@ -48,14 +48,7 @@ export default function Hero({ content }: { content: SiteContent }) {
           </dl>
         </div>
         <div className="relative animate-rise overflow-hidden rounded border-[5px] border-cream/10">
-          <Image
-            src="https://images.unsplash.com/photo-1597764690523-15bde4ebf7d3?q=80&w=800&auto=format&fit=crop"
-            alt={hero.photoAlt}
-            width={800}
-            height={533}
-            priority
-            className="h-64 w-full object-cover md:h-80"
-          />
+          <HeroVideo src="/intro.mp4" label={hero.photoAlt} />
           <p className="absolute bottom-3 left-3 bg-amber px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-navy-deep">
             {hero.photoTag}
           </p>

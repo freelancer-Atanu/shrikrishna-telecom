@@ -17,7 +17,7 @@ export default function StructuredData({ content }: { content: SiteContent }) {
       addressRegion: business.addressRegion,
       addressCountry: "IN",
     },
-    openingHours: "Mo-Su 09:30-20:30",
+    openingHours: ["Mo-Fr 09:00-21:00", "Sa-Su 09:00-13:30", "Sa-Su 17:00-21:00"],
     founder: business.ownerName,
     foundingDate: String(business.establishedYear),
     aggregateRating: {

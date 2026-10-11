@@ -73,7 +73,6 @@ export default function Products({ content }: { content: SiteContent }) {
                     </li>
                   ))}
                 </ul>
-                  <p className="mb-3 font-heading text-base text-amber">{item.price}</p>
                   <a
                     href={whatsappHref(business, `Hi, I'd like to check availability of the ${item.brand} ${item.model}`)}
                     target="_blank"

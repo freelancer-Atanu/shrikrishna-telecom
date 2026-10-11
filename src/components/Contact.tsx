@@ -45,6 +45,7 @@ export default function Contact({ content }: { content: SiteContent }) {
               <a href={business.mapsUrl} target="_blank" rel="noopener noreferrer" className="underline">
                 {business.addressLine}, {business.addressRegion}
               </a>
+              <span className="block text-sm font-normal">{business.landmark}</span>
             </dd>
           </div>
           <div className="flex justify-between border-b border-white/20 py-2.5">
@@ -53,7 +54,16 @@ export default function Contact({ content }: { content: SiteContent }) {
           </div>
           <div className="flex justify-between py-2.5">
             <dt>{contact.card.hoursFieldLabel}</dt>
-            <dd className="font-bold">{business.hoursLabel}</dd>
+            <dd className="text-right">
+              <ul className="space-y-1.5">
+                {business.hoursSchedule.map((row) => (
+                  <li key={row.days}>
+                    <span className="block text-xs font-normal tracking-wide uppercase opacity-80">{row.days}</span>
+                    <span className="font-bold">{row.times.join("  ·  ")}</span>
+                  </li>
+                ))}
+              </ul>
+            </dd>
           </div>
         </dl>
       </Container>
