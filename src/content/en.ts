@@ -22,6 +22,7 @@ export const en: SiteContent = {
       { days: "Saturday & Sunday", times: ["9 AM – 1:30 PM", "5 PM – 9 PM"] },
     ],
     mapsUrl: "https://maps.app.goo.gl/CZbNvzfnubdSRpjZ8",
+    reviewUrl: "https://search.google.com/local/writereview?placeid=ChIJlU38Hz699zkRfMN2oFx83mw",
   },
   topbar: {
     hoursAndLocation: "Onda Bazar, Bankura (Near Onda High School) — Mon–Fri 9 AM–9 PM, Sat–Sun 9 AM–1:30 PM & 5–9 PM",

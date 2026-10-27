@@ -41,7 +41,7 @@ export default function Reviews({ content }: { content: SiteContent }) {
             <Icon name="google" className="mr-1.5 text-amber" />
             {reviews.ctaText}
           </p>
-          <Button href={business.mapsUrl} variant="outline" icon="star" external>
+          <Button href={business.reviewUrl} variant="outline" icon="star" external>
             {reviews.ctaButton}
           </Button>
         </div>

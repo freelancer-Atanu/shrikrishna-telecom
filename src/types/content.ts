@@ -77,6 +77,7 @@ export interface SiteContent {
     addressRegion: string;
     hoursSchedule: { days: string; times: string[] }[];
     mapsUrl: string;
+    reviewUrl: string;
   };
   topbar: {
     hoursAndLocation: string;
